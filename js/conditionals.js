@@ -24,14 +24,25 @@
 
 
 
-function analyzeColor(blue) {
-    return blue is the color of the sky;
+// function analyzeColor(blue) {
+//     if (blue === true);
+//     return "is the color of the sky";
+// }
+// //standard function structure, why the syntax errors?
+// console.log(analyzeColor(blue));
+
+// function name(parameter1, parameter2, parameter3) {
+//     // code to be executed
+
+    //Going back to basics: remember basic function javascript syntax
+
+function analyzeColor(blue,yellow,red,green,cyan,purple,orange){
+    if(blue);
+    alert("blue is the color of the sky");
 }
-//standard function structure, why the syntax errors?
 
 
 
-console.log(analyzeColor, blur);
 
 
 
