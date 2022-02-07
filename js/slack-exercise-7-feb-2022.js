@@ -25,20 +25,34 @@ var canGetRideShare = true;
 
 console.log(isInsured);
 
-// function getToDestination(age,isInsured, hasCar, canGetRideShare) {
-//
-//     if (age > 16 && isInsured   && hasCar) {
-//         console.log(You Can Use Your Own Car);
-//         // true    one of these must be false    true
-//     } else if (age <=16 && !isInsured || !hasCar && canGetRideShare) {
-//         console.log("You can get a RideShare!");
-//     } else {
-//         console.log("You gotta call a friend");
-//     }
-// }
-//
-// getToDestination(age:17, isInsured:true, hasCar:true canGetRideshare:true);
+function getToDestination(age,isInsured, hasCar, canGetRideShare) {
+
+    if (age > 16 && isInsured   && hasCar) {
+        console.log(You Can Use Your Own Car);
+        // true    one of these must be false    true
+    } else if (age <=16 && isInsured && hasCar && canGetRideShare) {
+        console.log("You can get a RideShare!");
+     //alt cause canGetrideShare should trump everything else
+     // else if (canGetRideShare)
+    } else {
+        console.log("You gotta call a friend");
+    }
+}
+
+getToDestination(age:17, isInsured:true, hasCar:true canGetRideshare:true);
 
 //Something after argument list is breaking the code
 //also a flaw in the logic
+
+function canGetRideShare(hasDriversNearby, hasEnoughMoney) {
+    if(hasDriversNearby && hasDriversNearby) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//alternative
+//return!! (hasDriversNearby && hasEnoughMoney);
+
+getToDestination (age:16, insured:false, hasCar:false)
 
