@@ -40,7 +40,7 @@ function analyzeColor(blue,yellow,red,green,cyan,purple,orange){
     if(blue);
     alert("blue is the color of the sky");
 }
-
+//Why isn't this working?
 
 
 
