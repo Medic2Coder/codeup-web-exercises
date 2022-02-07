@@ -25,8 +25,19 @@ var canGetRideShare = true;
 
 console.log(isInsured);
 
-function getToDestination(age,isInsured, hasCar, canGetRideShare) {
-    if (age > 16 && isInsured   && hasCar) {
-        console.log()
-    }
-}
+// function getToDestination(age,isInsured, hasCar, canGetRideShare) {
+//
+//     if (age > 16 && isInsured   && hasCar) {
+//         console.log(You Can Use Your Own Car);
+//         //true true true true
+//     } else if (age <=16 && !isInsured || !hasCar && canGetRideShare) {
+//         console.log("You can get a RideShare!");
+//     } else {
+//         console.log("You gotta call a friend");
+//     }
+// }
+//
+// getToDestination(age:17, isInsured:true, hasCar:true canGetRideshare:true);
+
+//Something after argument list is breaking the code
+//also a flaw in the logic
