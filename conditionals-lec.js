@@ -2,13 +2,13 @@
 
 //class notes: name ==="xavier"
 //based on this condition you can either have a or b branches
-//T exectues some code, False executes some code
+//T executes some code, False executes some code
 //the most complex logic is based on very small decisions
 //in essence executing specific blocks of code
 
 let isAdmin = false;
 
-if (isadmin) {
+if (isAdmin) {
     console.log("You're an admin")
 }
 
@@ -27,10 +27,12 @@ if (moneyInMyWallet > itemPrice) {
 var age = 21;
 var priceOfDrink = 8.00;
 
-if age >= 21 && moneyInMyWallet >= priceOfDrink) {
+if (moneyInMyWallet >= priceOfDrink && age >= 21) {
     console.log("You can buy a drink")
 } else {
     console.log("Nope")
 }
 
-//note to self: console log issues? can't see this running in console, so is this syntax or operator error, intellij error/
+
+//note to self: syntax
+
