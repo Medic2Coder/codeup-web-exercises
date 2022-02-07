@@ -19,5 +19,7 @@
 // Be sure to log to the user if they can or cannot get a rideshare
 
 function getToDestination(age,isInsured, hasCar, canGetRideshare) {
-
+    if (age > 16 && isInsured   && hasCar) {
+        console.log()
+    }
 }
