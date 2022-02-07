@@ -18,7 +18,14 @@
 // Call canGetRideshare() in the else if after !isLegalDriver &&...
 // Be sure to log to the user if they can or cannot get a rideshare
 
-function getToDestination(age,isInsured, hasCar, canGetRideshare) {
+var age = 17;
+var isInsured = true;
+var hasCar = true;
+var canGetRideShare = true;
+
+console.log(isInsured);
+
+function getToDestination(age,isInsured, hasCar, canGetRideShare) {
     if (age > 16 && isInsured   && hasCar) {
         console.log()
     }
