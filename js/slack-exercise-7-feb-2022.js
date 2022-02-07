@@ -29,7 +29,7 @@ console.log(isInsured);
 //
 //     if (age > 16 && isInsured   && hasCar) {
 //         console.log(You Can Use Your Own Car);
-//         //true true true true
+//         // true    one of these must be false    true
 //     } else if (age <=16 && !isInsured || !hasCar && canGetRideShare) {
 //         console.log("You can get a RideShare!");
 //     } else {
@@ -41,3 +41,4 @@ console.log(isInsured);
 
 //Something after argument list is breaking the code
 //also a flaw in the logic
+
