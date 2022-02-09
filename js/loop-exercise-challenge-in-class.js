@@ -9,6 +9,8 @@
 //TODO: Use a while loop to output the numbers from 8-50
 //TODO: Using the same example, output the ODD numbers from 8-50
 //TODO: Hint: Use the % operator..
+
+
 // let i = 8;
 // while (i <=50) {
 //     console.log(i++);
