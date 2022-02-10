@@ -12,3 +12,8 @@ function loopNums(){
 loopNums();
 
 //This is Casey's example
+//Testing Notes: Follows the same pattern:
+
+//Arrange
+//Act
+//Assert
