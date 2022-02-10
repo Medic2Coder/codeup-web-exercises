@@ -13,7 +13,7 @@
 // }
 
 // Identify one control variable
-// Test the  two run condtion
+// Test the  two run condition
 // Iterate through
 // Repeat through
 
@@ -27,57 +27,44 @@
 // for 8; and 8 is less than 50, for num 8 +1
 // check that nine is ...for (
 //     whenever this condition turns false we break the loop
-// )
-
-
 //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //
-
-let letters = "";
-
-for(let i = letters.length - 1; i <=36; i++){ //stop the loop when the character count is 36
-    letters += "z"
-    console.log(letters); //we are not trusting i is in parity with letters?
-}
+//
+// let letters = "";
+// for(let i=1; i <=36; i++){ //stop the loop when the character count is 36
+//     console.log(i);
+//     letters += "z";
+//     console.log(letters);
+//     //we are or are not trusting i is in parity with letters?
+// }
 //i<=35 ?
 //
 // or i --; = nope, don't do this! this is infinie
 //
 // or letters.lenth -1 in for line (nope that gave us 38 in console log!
 //How to solve so we end up with 36?
-console.log(letters.length);
+//
+// console.log(letters.length);
 
+//example in class
 
+let letters = "mark"
+
+for (let i=0; i<36; i++) {//stop the loop when the character count is 36
+    if (letters.toUpperCase() === letters) ;
+
+    letters = letters.lowercase();
+
+else
+    letters = letters.toUpperCase();
+    console.log(letters);
+    console.log(letters.length);
+}
+// In Bracket purgatory ^^^
+
+// for (let i=0; i<36; i++){
+//     if letters.toUpperCase()===letters();
+// }
 
 
 
