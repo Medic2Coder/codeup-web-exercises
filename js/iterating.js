@@ -42,7 +42,7 @@
     //  * Refactor your above code to use a `forEach` loop
     //  */
 
-    var names = ["James", "Sarah", "Xavier", "Grogu"];
+    // var names = ["James", "Sarah", "Xavier", "Grogu"]; //already said above ^
     names.forEach(name => {
         console.log(name);
     });
