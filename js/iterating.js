@@ -24,23 +24,28 @@
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-    console.log(names[0]);//should output James
-    console.log(names[1]);//should ouput Sarah
-    console.log(names[2]);
-    console.log(names[3]);
+    // console.log(names[0]);//should output James
+    // console.log(names[1]);//should ouput Sarah
+    // console.log(names[2]);
+    // console.log(names[3]);
+    //
+    // /**
+    //  * TODO:
+    //  * Write some code that uses a for loop to log every item in the names
+    //  * array.
+    //  */
+    // for(let i = 0; i < names.length; i++) {
+    //     console.log(names[i]); //micro wins
+    // }
+    // /**
+    //  * TODO:
+    //  * Refactor your above code to use a `forEach` loop
+    //  */
 
-    /**
-     * TODO:
-     * Write some code that uses a for loop to log every item in the names
-     * array.
-     */
-    for(let i = 0; i < names.length; i++) {
-        console.log(names[i]); //that was satisfying, hello dopamine and thank you a grit, small victories
-    }
-    /**
-     * TODO:
-     * Refactor your above code to use a `forEach` loop
-     */
+    var names = ["James", "Sarah", "Xavier", "Grogu"];
+    names.forEach(name => {
+        console.log(name);
+    });
 
     /**
      * TODO:
