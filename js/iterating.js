@@ -55,10 +55,32 @@
      * - second: returns the second item in the array
      * - last: returns the last item in the array
      *
+     * // break down the problem from customer language to "intermediate language psuedocode"
+     *
+     *
      * Example:
      *  > first([1, 2, 3, 4, 5]) // returns 1
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+    //the following is walkthrough with Doc Rob:
+    function first(anArray) {
+        return anArray[0];
+    }
+    function second(anArray) {
+        return anArray[1];
+    }
+    function last(anArray) {
+        return anArray[2];
+    }
+
+    console.log(first( [1, 2, 3, 4, 5]));
+    console.log(first(names));
+
+    console.log(last(names));
+    console.log(last([1, 2, 3, 4, 5])); // As per Doc Rob, consider these utility functions
+    //In other words, make your functions clean and utilitarian so you can use them over and over or for other needs
+    //tools in the toolbox
+
 
 })();
