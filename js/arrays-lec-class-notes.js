@@ -24,5 +24,7 @@ console.log("Dog names: "+ dogNames);
 console.log(dogNames.length);
 //js is zero based lanaguage meaning...
 //order of elements is not arbitrary, does not change unless we change it
-
+console.log(dogNames[0]);//should output Fido
 //element at a particular index, first element is zero
+var lastIndex = dogNames.length -1;
+console.log(dogNames[dogNames.length -1]); //should output Lola
