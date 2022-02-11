@@ -28,3 +28,37 @@ console.log(dogNames[0]);//should output Fido
 //element at a particular index, first element is zero
 var lastIndex = dogNames.length -1;
 console.log(dogNames[dogNames.length -1]); //should output Lola
+
+//**notes to self (in voice of Doc Rob):
+
+//how to speak accessing elements
+//the element at index 0
+//the 0th element in the array
+//note that index can also be referred to as subscript
+//last element is at index length -1
+
+
+//how to speak accessing the last element?
+//the last element in the array
+
+//loops and arrays are like peas and carrots -Doc Rob
+//note to self ^ this would make a good t-shirt idea
+
+// for(var i=0; i<dogNames.length; i<100; i++) { //standard counting moves
+//     //start at 0 because JS is a zero based language
+// }
+
+
+//use longer expressive variables for most things, but short syntax for loops and arrays
+//Fido is the first element, even tho the index is 0
+
+for (var i = 0; i <dogNames.length; i++) {
+    //output the ith element in the array, the variable changes
+    //output the element sub i
+    //output the element at index i
+    // console.log(dogNames[i]);
+    console.log(" Dog at index " + i + " is " + dogNames[i]);
+}
+for (let i = dogNames.length - 1; i >= 0; i--) {//decrement
+    console.log(" Dog at index " + i + " is " +dogNames[i]);
+}
