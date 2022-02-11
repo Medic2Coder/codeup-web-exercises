@@ -73,4 +73,24 @@ for(let i = dogNames.length -1; i>=0; i--) {
         console.log("The odd dog at index " + 1 + " is " + dogNames[i]);
     }
 }
-dogNames.forEach()
+//no built in way to skip with for each, have to put that in there
+dogNames.forEach(function(dogName, index) {
+    //this function will be executed on each element
+
+
+    console.log(dogName);
+});
+// dogName = "Zantor";
+
+if (index % 2 === 0 ) {
+    console.log("Dog at index " + index + " is " + dogNames);
+}
+//stop the loop with break if dogName is Spot
+// if(dogNames ==="Spot")
+    //return
+    //
+// });
+
+
+    // TakeAway:
+    // don't use for each loop if you want to change the array structure
