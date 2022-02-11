@@ -62,3 +62,15 @@ for (var i = 0; i <dogNames.length; i++) {
 for (let i = dogNames.length - 1; i >= 0; i--) {//decrement
     console.log(" Dog at index " + i + " is " +dogNames[i]);
 }
+
+
+for(let i = dogNames.length -1; i>=0; i--) {
+    //output only the odd dogs
+    //Fido is the first element, even tho the index is 0
+    // therefore I consider Fido to be an odd element
+    //this even index values willbe considered an odd element
+    if(i%2===0) {
+        console.log("The odd dog at index " + 1 + " is " + dogNames[i]);
+    }
+}
+dogNames.forEach()
