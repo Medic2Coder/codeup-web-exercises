@@ -28,4 +28,9 @@ console.log(cohort);
 
 //Note: Object.property
 
+car.honk = function () {
+    console.log("Honque Honque")//french goose
+
+}
+    car.honk();
 
