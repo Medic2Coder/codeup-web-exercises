@@ -4,21 +4,21 @@
 //     "use strict";
 //
 //     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-//     var planetsArray;
+//     var planetsString;
 
     /**
      * TODO:
      * Convert planetsString to an array, and save it in a variable named
-     * planetsArray.
-     * console.log planetsArray to check your work
+     * planetsString.
+     * console.log planetsString to check your work
      */
-// var planetsArray = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",] //this was done manually
+// var planetsString = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",] //this was done manually
 // so to save time one can use split:
 let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-let planetsArray = planetsString.split("|");
-// console.log(planetsArray);
-    // console.log(planetsArray);
-    // console.log(planetsArray)
+let planetsString = planetsString.split("|");
+// console.log(planetsString);
+    // console.log(planetsString);
+    // console.log(planetsString)
 
     /**
      * TODO:
@@ -42,6 +42,24 @@ let listPlanets = planetsString.split("|");
 // let breakListPlanets = "<ol>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ol>"; //not working
 // let breakListPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";//trying ul again, still not working
 console.log(listPlanets);
+//from walkthrough:
+
+
+//Place code here for
+
+//code here for
+function buildPlanetUL (arrOfPlanets) {
+    let newString = '<ul>';
+    for (let i = 0; i < arrOfPlanets.length; i++){
+        newString += '<li>';
+        newString += arrOfPlanets[i];
+        newString += '</li>';
+    }
+    newString += '</ul>';
+    return newString;
+}
+
+
 // console.log(breakListPlanets);// not working
 //
 // Collections.sort(list);
@@ -56,8 +74,8 @@ console.log(listPlanets);
 
 
 
-listPlanets.sort();
-console.log(listPlanets); //Much better
+// listPlanets.sort();
+// console.log(listPlanets); //Much better
 
 
 
