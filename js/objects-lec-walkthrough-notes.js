@@ -18,4 +18,14 @@ console.log(car);
 
 console.log(car.model);
 
+let cohort =  {
+    name: 'Fortran',
+    Awesome: 'Sauce',
+    Ambition: 'GRIT is an understatement',
+}
+console.log(cohort);
+
+
+//Note: Object.property
+
 
