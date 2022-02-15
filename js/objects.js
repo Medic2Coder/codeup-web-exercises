@@ -44,14 +44,32 @@
     person.sayHello = function () {
         console.log(" Hello From " + firstname + " " + lastname);
     }
-    person.sayHello(); //have a set of parenthesis to potentially take in arguments
+    person.sayHello();
+    console.log(person.sayHello());
+
+    //have a set of parenthesis to potentially take in arguments
     // var shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
-console.log(person.sayHello());
+let shoppers = [
+    {name: "Cameron", amount: 180},
+    {name: "Ryan", amount: 250},
+    {name: "George", amount: 320}
+];
+shoppers.forEach(function (shopper) {
+    console.log(shoppers.amount);
+    if (shoppers.amount > 200) {
+        //apply discount
+        console.log(shoppers.name + ', your amount before discount is: $ ' + shoppers.amount + ' your discount is: $' + discount + ', and your total after applied discount is $ ' + amountAfterDiscount.toFixed);
 
+    } else {
+        //keep original mount
+        console.log(shoppers.name + ', your total is: $' + shoppers.amount);
+    }
+});
+//walkthrough help with Ry ^
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -64,7 +82,15 @@ console.log(person.sayHello());
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-
+ let books = [
+        {
+            title: "Dune",
+            author: {
+                firstname: 'Frank',
+                lastname: 'Herbert',
+            }
+        }
+    ]
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -89,7 +115,12 @@ console.log(person.sayHello());
      *      ---
      *      ...
      */
-
+books.forEach(function (book, index) { // how to get the greyed out notation :number?
+        console.log('book # ' + 1); //interesting problem using for each, use index +1
+        console.log('Title: ' +book.title);
+        console.log('Author: ' + book.author);
+        console.log('---')
+});
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -100,5 +131,26 @@ console.log(person.sayHello());
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+function createBook(title, author) {
+    let authorNameSplit = authorName.split
+    return {
+        title: title,
+        author: {
+            firstname: authorNameSplit[0],
+            lastname: authorNameSplit[1],
+        }
+    }
+    }
+    createBook(title: 'Clean Code', authorName: 'Bob Martin'));
 
+// how to add book to array?
+
+    // push?
+    //ry says yes:
+
+    addBook(createBook('Clean Code', 'Bob Martin'));
+
+    function addBook(book) {
+        books.push(book)
+    }
 })();
