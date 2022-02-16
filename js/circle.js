@@ -7,11 +7,13 @@
             let area = Math.PI * radius * radius //better but syntax is redundant in area? circle back to this, fun with puns.
             return area;
         }
+// TODO: complete this method
+// hint: area = pi * radius^2
+// TODO: return the proper value
+
         console.log(area(3));
 
-            // TODO: complete this method
-            // hint: area = pi * radius^2
-              // TODO: return the proper value
+
 
     //
     //     logInfo: function (doRounding) {
