@@ -10,10 +10,11 @@
 //
 
 let contactInfo = {
-    streetAddress: ["8888 Research Forest Drive", + "Houston, Texas" + 77382]
+    streetAddress: ["8888 Research Forest Drive", + "Houston, Texas" + 77382], //why a NaN here?
     state: "Texas",
     postalCode: 77382,
     emailAddress: "somethingsomething@gmail.com"
 
 }
 
+console.log(contactInfo);
