@@ -37,7 +37,7 @@ console.log(area(3));
     //     }
 console.log(Math.round(28.274333882308138));
 
-// circle["radius"] = 5; //alternatively use bracket notation
+// circle["radius"] = 5; //alternatively use bracket notation per Casey
 
     // // log info about the circle
     // console.log("Raw circle information");
