@@ -1,6 +1,8 @@
 
 
 //still needs to be polished up
+//walkthrough with Casey modifications will be noted below:
+
 
 
 
@@ -10,13 +12,7 @@
 // create a circle object
 // var circle = {
 //     radius: 3,
-//
-//     getArea: function () {
-//         // TODO: complete this method
-//         // hint: area = pi * radius^2
-//
 //         return; // TODO: return the proper value
-//     },
 
         function area (radius) {
             // let area = Math.PI * radius * radius //better but syntax is redundant in area? circle back to this, fun with puns.
@@ -26,21 +22,23 @@
 // TODO: complete this method
 // hint: area = pi * radius^2
 // TODO: return the proper value
-
-            // console.log(area(3));
-
+console.log(area(3));
 
 
-    //
-    //     logInfo: function (doRounding) {
+
+        // logInfo: function (doRounding) {
+            // if (doRounding){
+            //     console.log(Math.round(this.getArea)); //works if getArea declared without comments above
+            // }
     //         // TODO: complete this method.
-    console.log(Math.round(28.274333882308138)); //Is there a better way to get the area from last function?
     //         // If doRounding is true, round the result to the nearest integer.
     //         // Otherwise, output the complete value
     //         console.log("Area of a circle with radius: " + this.radius + ", is: ");
     //     }
-    // };
-    //
+console.log(Math.round(28.274333882308138));
+
+// circle["radius"] = 5; //alternatively use bracket notation
+
     // // log info about the circle
     // console.log("Raw circle information");
     // circle.logInfo(false);
