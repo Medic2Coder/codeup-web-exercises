@@ -14,4 +14,4 @@ const Mark = {
 
 };
 
-Mark.eyes;
+console.log(Mark);
