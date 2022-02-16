@@ -9,6 +9,22 @@
 // email address
 //
 
+const mark = {
+    fullname:["Markle", "M.", "Sparkle"],
+    firstname: "Markle",
+    lastname: "Sparkle",
+    species: 'human',
+    model: 'north american',
+    year: 1999 + "wishful thinking",
+    eyes: 'brown',
+    password: "fortran4lie",
+    occupation: "Padawan to code gremlin",
+    dob: "10.21.1999"
+};
+
+console.log(mark);
+console.log(mark.password);
+//
 let contactInfo = {
     // streetAddress: ["8888 Research Forest Drive", + "Houston, Texas" + 77382], // //why a NaN here?
     streetAddress: "8888 Hazel Lane",
@@ -30,8 +46,17 @@ console.log(typeof this);
 
 //constructor function:
 
-// function Person(names, occupation, dob) {
-//     this.streetAddress = streetAddress;
-//     this.postalCode = postalCode;
-//     this.dob = dob;
+//Defines a ContactInfo object
+function ContactInfo (streetAddress, postalCode, dob, state) {
+    this.streetAddress = streetAddress;
+    this.postalCode = postalCode;
+    this.dob = dob;
+    this.state = state;
+}
+
+// function Mark (fullname,occupation,dob,contactInfo) {
+//     let person2 = new Mark( fullname,occupation, dob, contactInfo);
+//     new ContactInfo(streetAddress, person2)
+//
 // }
+// This will help you learn to work with APIs
