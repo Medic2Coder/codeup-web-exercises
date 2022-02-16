@@ -10,8 +10,10 @@ const Mark = {
     species: 'human',
     model: 'north american',
     year: 1986,
-    eyes: 'brown'
+    eyes: 'brown',
+    password: "fortran4life"
 
 };
 
 console.log(Mark);
+console.log(Mark.password);
