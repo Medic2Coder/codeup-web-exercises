@@ -1,11 +1,23 @@
 // (function() {
     "use strict";
 
-    // create a circle object
-// radius = 3
+// create a circle object
+// var circle = {
+//     radius: 3,
+//
+//     getArea: function () {
+//         // TODO: complete this method
+//         // hint: area = pi * radius^2
+//
+//         return; // TODO: return the proper value
+//     },
+
         function area (radius) {
-            let area = Math.PI * radius * radius //better but syntax is redundant in area? circle back to this, fun with puns.
-            return area;
+            // let area = Math.PI * radius * radius //better but syntax is redundant in area? circle back to this, fun with puns.
+            // return area;
+            return Math.PI * radius * radius; //suggestion per Casey to make this less verbose
+
+
         }
 // TODO: complete this method
 // hint: area = pi * radius^2
