@@ -1,8 +1,8 @@
 "use strict";
 // JS Object Warmup, pt 4:
 // We are going to create a method which
-// let name = window.prompt("Enter all your names to your heart's content: ");
-// alert("Your name is " + name);
+//          let name = window.prompt("Enter all your names to your heart's content: ");
+//          alert("Your name is " + name);
 // allows a user to input their desired amount of names names
 
 // use prompt, alert, confirm inside of a while loop
@@ -42,6 +42,9 @@ function getNames() { //while loop or for loop, while loop may be easier in this
 // this.names();
 console.log(getNames);
 
+/*This is called a
+"getter method"
+ */
 
 
 
