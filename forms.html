@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us!</title>
+
+        <style>
+        /*body {*/
+        /*    background-image: url('https://');*/
+        /*    !*background-repeat: no-repeat;*!*/
+        /*}*/
+
+        body {
+            background-image: url("bg3.png"), url("bg1.jpg");
+            background-color: #FF5733;
+        }
+        </style>
+
+
+
+</head>
+<body>
+<!--Notes and more Notes -->
+<!--
+HTTP methods:
+Get ->  //on every get request there are jquery requests
+Post ->
+Put ->
+Delete ->
+request-inspector.glitch.me to plug in your html and test to see what the requests look like
+-->
+
+<!--< method="post" action="http://requestor-inspector.glitch.me/">-->
+    <div>
+        <label for="email-input">Email</label>
+        <input id="email-input" type="text" name="email" placeholder=" Enter your email">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="text" name="password" placeholder=" Enter your password">
+    </div>
+    <div>
+        <label for="bio">bio</label>
+
+        <textarea id="bio" name="bio" rows="25" cols="25"> Tell us about yourself!</textarea>
+        <button type="text">Submit</button>
+
+    </div>
+    <h3>How did you hear about us?</h3>
+    <form action="http://requestor-inspector.glitch.me/">
+        <input type="radio" id="billboard" name="billboard" value="Billboard">
+        <label for="billboard">Billboard</label><br>
+        <input type="radio" id="radio advertisement" name="radio" value="Radio">
+        <label for="radio advertisement">Radio Advertisment</label><br>
+        <input type="radio" id="internet advertisement" name="internet advertisement" value="Internet Advertisement">
+        <label for="Internet Advertisement">Internet Advertisement</label>
+        <input type="radio" id="other" name="other" value="Other">
+        <label for="other">Other</label>
+        <input type="submit" value="Submit">
+    </form>
+
+<div>
+</div>
+<div>
+</div>
+</form>
+</body>
+</html>
+
+
+<!--
+
+
+
+Create an empty form element. We will be adding to this throughout the exercise.
+
+Create a textarea named "bio". This is for the user to fill out a short description of themselves.
+
+Create a "How did you hear about us" section that contains radio buttons. The values should be "billboard", "radio advertisement", "internet advertisement", and "other". Only one of the values should be allowed to be selected at a time.
+
+What happens if the inputs are given different name attributes?
+Change these inputs so that multiple answers are allowed to be selected.
+Create a dropdown that asks the user what web browser they are using.
+
+As you work through the steps above, you should:
+
+Make sure all of your form elements have labels.
+Make sure there's a way to submit the form, adding a submit button will solve this.
+Ensure that all of your form values are being submitted to the Request Inspector.
+Experiment with different attribute values:
+What do you notice when changing the form's request method from GET to POST?
+What happens if you leave off the name attribute on an input?
+What happens if you leave off the id attribute on a form input?
+Bonus
+To configure your forms to send you an email, sign up for the free plan on El Formo. El Formo will provide you a URL for your form's action attribute. When you use this action, the El Formo service will email you each form submission. This is a great way to get forms working online super quick!
+-->
