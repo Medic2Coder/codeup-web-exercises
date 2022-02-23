@@ -36,7 +36,7 @@ console.log(area(3));
     //         console.log("Area of a circle with radius: " + this.radius + ", is: ");
     //     }
 console.log(Math.round(28.274333882308138));
-
+const targetIndex = Math.floor(Math.random() * COLORS_ARRAY.length);
 // circle["radius"] = 5; //alternatively use bracket notation per Casey
 
     // // log info about the circle
@@ -62,3 +62,46 @@ console.log(Math.round(78.53981633974483
     // console.log("Circle information rounded to the nearest whole number");
     // circle.logInfo(true);
 // })();
+
+//Checking themes between VSC and intellij: example code:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

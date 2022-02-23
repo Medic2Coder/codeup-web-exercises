@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<body>
+<h1>Color Guessing Game</h1>
+<button type="button" onclick="runGame()">Start Game</button>
+<script>
+    /* This is
+    my multiline comment
+    here in html
+    */
+    const COLORS_ARRAY = ['blue', 'cyan', 'gold', 'gray', 'green', 'magenta', 'orange', 'red', 'white', 'yellow']
+    function runGame() {
+        let guess = ' ';
+        let correct = false;
+        let numTries = 0;
+        const targetIndex = Math.floor(Math.random() * COLORS_ARRAY.length);
+        const target = COLORS_ARRAY[targetIndex];
+        console.log(target)
+
+
+        do {
+            guess = prompt('I am thinking of one of these colors:\n\n' + COLORS_ARRAY +
+                '\n\nWhat color am I thinking of?\n');
+            numTries += 1;
+            if (!guess ) {
+                alert('Please enter a value!');
+                return false;
+            }
+
+            correct = checkGuess(guess, target);
+        } while (!correct);
+        alert("Congrats! You got it" + target + " \n\nIt took you" + numTries + "tries to guess correctly");
+        document.body.style.background = guess;
+    }
+
+    function checkGuess (guess, target) {
+        let correct = true;
+        console.log(guess);
+        if (COLORS_ARRAY.includes(guess)) {
+            alert('You have not entered a color from the list\n\nPlease choose a color from the before mentioned list.');
+        } else if (guess > target) {
+            alert('Your choice is alphabetically higher than the color.');
+        } else if (guess < target) {
+            alert('Your choice is alphabetically lower than the color.');
+        } else {
+            correct = true;
+        }
+        return correct;
+    }
+
+    //Shoutout to the awesome instructor! Thanks!
+
+</body>
+</html>
