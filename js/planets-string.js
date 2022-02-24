@@ -1,5 +1,7 @@
 "use strict";
 
+//TODO: (Note to Self) Come back to this after JS Project to clean up this code. listPlanets is issue number one
+
 // (function(){
 //     "use strict";
 //
@@ -12,13 +14,13 @@
      * planetsString.
      * console.log planetsString to check your work
      */
-// var planetsString = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",] //this was done manually
-// so to save time one can use split:
-let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-let planetsString = planetsString.split("|");
-// console.log(planetsString);
-    // console.log(planetsString);
-    // console.log(planetsString)
+var planetsString = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",] //this was done manually
+// // // so to save time one can use split:
+var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+var planetsString = planetsString.split("|");
+console.log(planetsString);
+    console.log(planetsString);
+    console.log(planetsString)
 
     /**
      * TODO:
@@ -30,18 +32,18 @@ let planetsString = planetsString.split("|");
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-    // let listPlanets = planetsString.split("|");
-    // let breakListPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";
+    var listPlanets = planetsString.split("|");
+    // var breakListPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";
     // console.log(listPlanets);
     // console.log(breakListPlanets);
 
     //Note to self, then would this work to make an ordered list with same logic?
 //let's try
 
-let listPlanets = planetsString.split("|");
+// let listPlanets = planetsString.split("|");
 // let breakListPlanets = "<ol>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ol>"; //not working
 // let breakListPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";//trying ul again, still not working
-console.log(listPlanets);
+// console.log(listPlanets);
 //from walkthrough:
 
 
@@ -76,7 +78,6 @@ function buildPlanetUL (arrOfPlanets) {
 
 // listPlanets.sort();
 // console.log(listPlanets); //Much better
-
 
 
 // })();
