@@ -1,4 +1,4 @@
-/*Favorite color scheme, credit due to: Nick Milo CyberTron Theme  */
+/*Favorite colors selected from Nick's color scheme, credit due to: Nick Milo CyberTron Theme  */
 
 .theme-dark .graph-view.color-fill-tag {
     color: #5dbcd2;
@@ -30,3 +30,28 @@
     --background-primary-alt: #36393f;
 
 }
+
+/*Added personal touches to reflect "tron" styling*/
+
+/*body {*/
+/*    background-color:#36393f;*/
+/*}*/
+
+.fancy-header {
+    /*color: blue; !* single line comment *!*/
+    text-decoration: underline;
+    color: #9e8aff;
+    Opacity:1;
+}
+
+/*.fancy-header {*/
+/*    color: #291d60; !* single line comment *!*/
+/*    text-decoration: underline;*/
+/*}*/
+.theme-dark {
+    /*--background-primary: #2f3136;*/
+    background-color: #2f3136;
+    color: #5dbcd2;
+    /*--background-primary-alt: #36393f;*/
+}
+/*}*/
