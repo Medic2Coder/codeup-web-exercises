@@ -6,19 +6,27 @@ body {
     background-image: url(/images/cybertron-person.png);
 }
 
+.one {
+    /*list-style: upper-alpha;*/
+    list-style: georgian inside url('/media/examples/rocket.svg');
+}
 
+.two {
+    list-style: square;
+}
 
 h2 {
     text-decoration: underline;
     color: #9e8aff;
-    Opacity:1;
+    Opacity: 1;
     text-align: center;
 }
+
 .fancy-header {
     /*color: blue; !* single line comment *!*/
     text-decoration: underline;
     color: #9e8aff;
-    Opacity:1;
+    Opacity: 1;
     text-align: center;
 }
 
@@ -32,6 +40,7 @@ h2 {
     color: #5dbcd2;
     /*--background-primary-alt: #36393f;*/
 }
+
 /*}*/
 
 
@@ -57,72 +66,70 @@ selector-todo {
 
 /* selector for all elements with class="article" */
 selector-todo {
-    clear:both;
+    clear: both;
 }
 
 /*  selector for all "anchor" elements
     that are a direct child of an element with class="article" */
 selector-todo {
-    float:right;
+    float: right;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-width : 320px)
-and (max-width : 480px) {
+and (min-width: 320px)
+and (max-width: 480px) {
     /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen
-and (min-width : 321px) {
+and (min-width: 321px) {
     /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (max-width : 320px) {
+and (max-width: 320px) {
     /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen
-and (min-width : 768px)
-and (max-width : 1024px) {
+and (min-width: 768px)
+and (max-width: 1024px) {
     /* Styles */
 }
 
 /* iPads (landscape) ----------- */
 @media only screen
-and (min-width : 768px)
-and (max-width : 1024px)
-and (orientation : landscape) {
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape) {
     /* Styles */
 }
 
 /* iPads (portrait) ----------- */
 @media only screen
-and (min-width : 768px)
-and (max-width : 1024px)
-and (orientation : portrait) {
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait) {
     /* Styles */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 1224px) {
+and (min-width: 1224px) {
     /* Styles */
 }
 
 /* Large screens ----------- */
 @media only screen
-and (min-width : 1824px) {
+and (min-width: 1824px) {
     /* Styles */
 }
 
 /* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     /* Styles */
 }
