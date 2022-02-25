@@ -4,11 +4,13 @@ body {
     background-color: #36393f;
     /*background-image: url("https://www.paper.gif");*/
     background-image: url(/images/cybertron-person.png);
+    /*font-family: "Helvetica Neue",Helvetica,Arial;*/
 }
 
 .one {
-    /*list-style: upper-alpha;*/
-    list-style: georgian inside url('/media/examples/rocket.svg');
+    list-style: upper-alpha;
+    /*list-style: georgian inside url('/media/examples/rocket.svg');*/
+
 }
 
 .two {
@@ -71,7 +73,7 @@ selector-todo {
 
 /*  selector for all "anchor" elements
     that are a direct child of an element with class="article" */
-selector-todo {
+.heading two {
     float: right;
 }
 
