@@ -1,4 +1,4 @@
-/*Inspired by Nick Milo CyberTron Theme  */
+/*Favorite color scheme, credit due to: Nick Milo CyberTron Theme  */
 
 .theme-dark .graph-view.color-fill-tag {
     color: #5dbcd2;
@@ -23,3 +23,10 @@
 
 .graph-view.color-fill {
     color: #fcf601;
+}
+
+.theme-dark {
+    --background-primary: #2f3136;
+    --background-primary-alt: #36393f;
+
+}
