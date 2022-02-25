@@ -1,0 +1,25 @@
+/*Inspired by Nick Milo CyberTron Theme  */
+
+.theme-dark .graph-view.color-fill-tag {
+    color: #5dbcd2;
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+    color: #d669bc;
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+    color: #9e8aff;
+    Opacity:1;
+}
+
+.theme-dark .graph-view.color-arrow {
+    color: #d669bc;
+}
+
+/**********************/
+/* Graph View */
+/**********************/
+
+.graph-view.color-fill {
+    color: #fcf601;
