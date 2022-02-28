@@ -1,65 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class = theme-dark>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <title>WEBPAGE TAB TITLE</title>
+    <title>Bytes of Pizza</title>
 
     <!-- Bootstrap CSS -->
     <!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../2_css/order-pizza.css">
+    <link rel="stylesheet" href="../2_css/all.min.css">
 
 </head>
-<body>
+<body class = theme-dark>
 <!--San-Serif means bootstrap is working-->
 <header>
-    <h1>HEADER GOES HERE</h1>
+<!--    <h1>Welcome to Cyber Pizza!</h1>-->
+    <h1 class = fancy-header>Welcome to Cyber World!</h1>
+
 </header>
 <!--NAVBAR GOES BELOW-->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+    <nav class="navbar navbar-expand-lg">
+
+    <a class="navbar-brand" href="#">Cyber Pizza</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active" >
+                <a class="nav-link" href="#">Order Online <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Menu</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+<!--            <li class="nav-item dropdown">-->
+<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+<!--                   aria-expanded="false">-->
+<!--                    Dropdown-->
+<!--                </a>-->
+<!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                    <div class="dropdown-divider"></div>-->
+<!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                </div>-->
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-            </li>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Zipcode" aria-label="Search Stores Near You!">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Stores Near You!</button>
+            </form>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
+        <li class="nav-item"><a class="nav-link">Sign Up</a></li>
     </div>
 </nav>
 
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4" >Welcome to Cyber Pizza!</h1>
+        <!--        <span></span>-->
+    </div>
+</div>
+<h2 class = fancy-header >Build Your Own Cyber Pizza</h2>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">1 Size and Crust</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">2 Cheesy and Saucy</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">3 Modify It!</a>
+<!--    </li>-->
+<!--    <li class="nav-item">-->
+<!--        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--    </li>-->
+</ul>
 
+<!--<div class="form-check form-check-inline">-->
+<!--    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">-->
+<!--    <label class="form-check-label" for="inlineRadio1">1</label>-->
+<!--</div>-->
+<!--<div class="form-check form-check-inline">-->
+<!--    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">-->
+<!--    <label class="form-check-label" for="inlineRadio2">2</label>-->
+<!--</div>-->
+<!--<div class="form-check form-check-inline">-->
+<!--    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>-->
+<!--    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>-->
+<!--</div>-->
+
+<!--CARDS BELOW -->
+
+
+<ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="radio" aria-label="Radio button for following text input">
+        </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="radio" aria-label="Radio button for following text input">
+        </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="radio" aria-label="Radio button for following text input">
+        </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="radio" aria-label="Radio button for following text input">
+        </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+
+
+<!-- CARDS ABOVE -->
 <!--<script go here -->
 <!--<script go here -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -70,8 +157,33 @@
         crossorigin="anonymous"></script>
 <!-- Additional CSS must be placed after Bootstrap CSS -->
 <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"/>
 
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"/>-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis eos est
+                exercitationem facilis, inventore ipsa molestias necessitatibus quam saepe,
+                sequi ut veniam. Asperiores hic inventore quidem ratione sunt.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis eos est
+    exercitationem facilis, inventore ipsa molestias necessitatibus quam saepe,
+    sequi ut veniam. Asperiores hic inventore quidem ratione sunt.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis eos est
+    exercitationem facilis, inventore ipsa molestias necessitatibus quam saepe,
+    sequi ut veniam. Asperiores hic inventore quidem ratione sunt.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis eos est
+    exercitationem facilis, inventore ipsa molestias necessitatibus quam saepe,
+    sequi ut veniam. Asperiores hic inventore quidem ratione sunt.</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis eos est
+    exercitationem facilis, inventore ipsa molestias necessitatibus quam saepe,
+    sequi ut veniam. Asperiores hic inventore quidem ratione sunt.</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur corporis eos est
+    exercitationem facilis, inventore ipsa molestias necessitatibus quam saepe,
+    sequi ut veniam. Asperiores hic inventore quidem ratione sunt.</p>
 </body>
 <footer>
     <!--Footer -->
