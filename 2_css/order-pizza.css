@@ -125,8 +125,32 @@ and (min-width: 1824px) {
 
 .jumbotron {
     background-image: url("../images/pizza.png");
+    filter: drop-shadow(.5rem .5rem 1rem #ff3503);
     /*background-size: 100% 100%;*/
     background-size: cover;
     /*height: 100%;*/
+}
+
+.navbar-custom {
+    background-color: #2f3136;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    background-color: #2f3136;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+li {
+    background-color: #2f3136;
+    text-color: #5dbcd2;
 }
 /*}*/
