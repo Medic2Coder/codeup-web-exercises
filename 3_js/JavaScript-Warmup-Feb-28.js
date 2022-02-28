@@ -20,21 +20,57 @@
 
 
               //Walthrough below... however still want to use pop
+//
+// function removeAll (coffees, valueToRemove) {
+//     let coffees = ['espresso', 'mochachino', 'cocoa', 'jetblackhyperchargedcoffee'];
+//
+//     for (let i = 0; i <coffees.length; i++) {
+//     if (valueToRemove === coffees[i]) }
+//     continue;
+// }
+// filtered.push(coffees[i]);
+//
+// console.log(removeAll(coffees, "cocoa"));
 
-function removeAll (coffees, valueToRemove) {
-    let coffees = ['espresso', 'mochachino', 'cocoa', 'jetblackhyperchargedcoffee'];
+// TODO: Refactor this from walkthrough:
 
-    for (let i = 0; i <coffees.length; i++) {
-    if (valueToRemove === coffees[i]) }
-    continue;
-}
-filtered.push(coffees[i]);
+// {
+//     let coffees = ['espresso', 'mochachino', 'cocoa', 'jetblackhyperchargedcoffee'];
+//
+//     for (let i = 0; i <coffees.length; i++) {
+//     if (valueToRemove === coffees[i]) }
+//     continue;
+// }
+// filtered.push(coffees[i]);
+//
+// console.log(removeAll(coffees, "cocoa"));
 
-console.log(removeAll(coffees, "cocoa"));
+//Example from article:
 
-// TODO: Refactor this
+// var array = [10,11,12,13,14,15,16,17];
+//
+// function removeElement(arr) {
+//     if(arr.length > 0)
+//         arr.length --;
+//     return arr
+// };
+//
+// var newArray = removeElement(array);
+// console.log(newArray);
+// Adding it together:
 
+let coffees = ['espresso', 'mochachino', 'cocoa', 'jetblackhyperchargedcoffee'];
 
+function removeElement(arr) {
+    if (arr.length >0)
+        arr.length --;
+    return arr
+};
+
+let newCoffees = removeElement(array);
+console.log(newCoffees);
+
+//TODO: still not calling correctly
 
 
 
