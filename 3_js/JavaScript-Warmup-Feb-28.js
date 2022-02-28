@@ -65,14 +65,14 @@ function removeElement(arr) {
     if (arr.length >0)
         arr.length --;
     return arr
-};
+}
 
 let newCoffees = removeElement(coffees);
 console.log(newCoffees);
 
-//TODO: still not calling correctly       Done.
+//TODO: still not calling correctly       Done!
 
-// TODO: Celebrate even the samll wins! Done.
+// TODO: Celebrate even the samll wins! Done!
 
 
 

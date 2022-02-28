@@ -1,0 +1,116 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width: 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width: 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
+}
+
+/*Favorite colors selected from Nick's color scheme, credit due to: Nick Milo CyberTron Theme  */
+
+.theme-dark .graph-view.color-fill-tag {
+    color: #5dbcd2;
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+    color: #d669bc;
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+    color: #9e8aff;
+    Opacity:1;
+}
+
+.theme-dark .graph-view.color-arrow {
+    color: #d669bc;
+}
+
+/**********************/
+/* Graph View */
+/**********************/
+
+.graph-view.color-fill {
+    color: #fcf601;
+}
+
+.theme-dark {
+    --background-primary: #2f3136;
+    --background-primary-alt: #36393f;
+
+}
+
+/*Added personal touches to reflect "tron" styling*/
+
+/*body {*/
+/*    background-color:#36393f;*/
+/*}*/
+
+.fancy-header {
+    /*color: blue; !* single line comment *!*/
+    text-decoration: underline;
+    color: #9e8aff;
+    Opacity:1;
+}
+
+/*.fancy-header {*/
+/*    color: #291d60; !* single line comment *!*/
+/*    text-decoration: underline;*/
+/*}*/
+.theme-dark {
+    /*--background-primary: #2f3136;*/
+    background-color: #2f3136;
+    color: #5dbcd2;
+    /*--background-primary-alt: #36393f;*/
+}
+/*}*/
