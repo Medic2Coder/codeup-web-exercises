@@ -67,10 +67,12 @@ function removeElement(arr) {
     return arr
 };
 
-let newCoffees = removeElement(array);
+let newCoffees = removeElement(coffees);
 console.log(newCoffees);
 
-//TODO: still not calling correctly
+//TODO: still not calling correctly       Done.
+
+// TODO: Celebrate even the samll wins! Done.
 
 
 
