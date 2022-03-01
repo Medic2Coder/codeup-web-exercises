@@ -101,7 +101,13 @@ Text block content
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 /* Overall styling, e.g. vertical spacing */
-p, ol, ul, pre, blockquote, figure, hr, dl {
+/*p, ol, ul, pre, blockquote, figure, hr, dl {*/
+/*    border-top: 1px solid #fcf601;*/
+/*}*/
+
+hr {
+    border-top: 0.08em solid #fcf601;
+    border-radius: 0.4em;
 }
 
 p {
