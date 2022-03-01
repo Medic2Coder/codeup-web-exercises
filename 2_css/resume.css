@@ -15,12 +15,16 @@ Root
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 :root {
+    font-family: 'Abel', sans-serif;
+
 }
 
 html {
+    font-family: 'Abel', sans-serif;
 }
 
 body {
+    font-family: 'Abel', sans-serif;
 }
 
 
