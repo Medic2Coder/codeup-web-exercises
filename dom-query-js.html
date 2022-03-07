@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
@@ -24,7 +24,8 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-
+<!--                  document.querySelector(#main-header) is usually easier because it's like jquery -->
+<!-- Don't use innerHTML becauase site can be attacked with injections, use innerText instead -->
 <script>
     (function() {
         "use strict";
@@ -46,9 +47,16 @@
         var listItems = document.getElementsByTagName("li");
 
         // TODO: Set text color on every other list item to grey
-        for let i = 0; i < listItems.length; i++;
+        // for (let i = 0; i < listItems.length; i++)  {
+        //       listItems[i].style.color = "#808080";
+        // }
+
+        for (let i = 0; i < listItems.length; i+=2)  {
+            listItems[i].style.color = "#808080";
+        }
 
         // TODO: Set text color of li with dbid = 1 to blue   Remember that getattribute... console(log)dbid
+
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         // var subParagraphs = ;
