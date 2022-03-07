@@ -29,20 +29,21 @@
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = "main-header";
+        var mainHeader = document.getElementById("main-header");
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         mainHeader.innerText =  "JavaScript is Cool";
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = "sub-header";
+        var subHeader = document.getElementById("sub-header");
 
         // TODO: Set the text color of subHeader to blue
-        // document.getElementbyId(subHeader).style.color = "blue";
+        // document.getElementbyId(subHeader).style.color = "#0000FF";    Did not work but below line works
         subHeader.style.color = "#0000FF";
 
         // TODO: Uncomment the next line and get all list items
-        var listItems = ;
+        // var listItems = ;
+        var listItems = document.getElementsByTagName("li");
 
         // TODO: Set text color on every other list item to grey
 
