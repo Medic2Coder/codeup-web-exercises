@@ -1,11 +1,11 @@
 "use strict";
 
-let handler = function () {
-    alert("You clicked something!");
-
-}
-
-document.addEventListener("click", handler);
+// let handler = function () {
+//     alert("You clicked something!");
+//
+// }
+//
+// document.addEventListener("click", handler);
 
 //function expressions are NOT hoisted to the top of the script -
 // ...therefore best practice to put for example document handler on bottom
@@ -22,9 +22,48 @@ let header = document.querySelector("#main-header");
 
 //ATTACH EVENT LISTENER
 header.addEventListener("click", headerClick);
+// header.addEventListener("dblclick", headerClick);
+
 
 //What happens on header click
 
-function headerClick() {
-    header.style.backgroundColor = "yellow"
-}
+// function headerClick() {
+//     header.style.backgroundColor = "yellow"
+// }
+//
+let input = document.querySelector("#search");
+//
+// input.addEventListener("keyup", function (event) {
+//     // console.log(event.code);
+//
+//     //PRINT ELEMENT
+//     console.log(event.target);
+//
+//
+// //PRINT KEY CODE
+//     console.log(event.code);
+// })
+
+//Last Part of walkthrough-lecture:
+// input.addEventListener("keyup", function (event) {
+//    
+// })
+
+let moreBtn = document.querySelector("#more");
+moreBtn.addEventListener("click", function (e) {
+    let p = e.target.previousElementSibling
+    if (p.classList.contains("hidden")) {
+        p.classList.remove("hidden");
+        e.target.innerText = "Less";
+    } else {
+        p.classList.add("hidden");
+        e.target.innerText = "More";
+    }
+
+    console.log(e.target.previousElementSibling);
+});
+
+
+
+
+
