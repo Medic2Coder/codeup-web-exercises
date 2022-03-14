@@ -1,5 +1,16 @@
 //VERSION USING VANILLA JS...
-(function () {
+$(document).ready(function () {
+    //your code here
+    // $("*").css({"outline": "1px dotted red"});
+    $("*").css({"outline": "1px solid red"});
+    // $("*").css({"outline": "1px dotted red"});
+
+
+
+
+});
+
+// (function () {
 
 // get the thing
     let navContent = document.getElementById("navContent");
@@ -25,7 +36,22 @@
     contentDiv.replaceChildren();
 
     // Target a specific area on the DOM to insert our new paragraph
-    $('body > script').first().before(getNewParagraph())
+    // $('body > script').first().before(getNewParagraph())
+
+    //    sandbox below
+
+    // css({"propertyname":"value","propertyname":"value",...});
+    // $("p").css({"background-color": "yellow", "font-size": "200%"});
+
+    // $("*").css({"outline": "red"});
+
+    // $("p").css({"background-color": "yellow", "font-size": "200%"});
+
+
+
+
+//    sandbox above
+
 
 
     //return a template string representing new html element(s)
@@ -46,14 +72,15 @@
     }
 
 
+
 // PRETEND THIS IS AN API CALL ACROSS THE INTERWEBS
-    function getGitHubInfo() {
-        return {
-            name: "vegetasrevenge",
-            details: "I DO CODE REAL GUD 🧠"
-        };
-    }
-})()
+//     function getGitHubInfo() {
+//         return {
+//             name: "vegetasrevenge",
+//             details: "I DO CODE REAL GUD 🧠"
+//         };
+//     }
+// })()
 
 
 
