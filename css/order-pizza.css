@@ -119,7 +119,7 @@ and (min-width: 1824px) {
     /*color: blue; !* single line comment *!*/
     text-decoration: underline;
     color: #9e8aff;
-    Opacity:1;
+    Opacity:0.6;
 }
 
 /*.fancy-header {*/
@@ -139,6 +139,8 @@ and (min-width: 1824px) {
     filter: drop-shadow(.5rem .5rem 1rem #ff3503);
     /*background-size: 100% 100%;*/
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /*height: 100%;*/
 }
 
