@@ -1,4 +1,5 @@
 
+//TODO: refactor using jquery, try to refactor something else as well using jquery on another past work or project
 //VERSION USING VANILLA JS...
 (function(){
 
@@ -22,6 +23,7 @@
 // TODO: Add nameElement to the DOM - specifically in between the GitHub Logo and the ul on the navbar
     navContent.insertBefore(nameElement, navContent.children[1]);
 
+    // console.log($#navContent>"p")
 
     let contentDiv = document.querySelector('div.container-fluid.container-md.row.mx-md-auto.mt-4');
 
