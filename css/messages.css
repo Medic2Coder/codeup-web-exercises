@@ -6,6 +6,71 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-/*Use the following naming convention for the variables
-bg-info, text-info, bg-success, text-success, etc.*/
+/*TODO: Circle back and play with this example*/
+
+/*:root {*/
+/*    --message: none;*/
+/*    color: white;*/
+/*    background-color: #0a568c;*/
+/*    border-radius: 2em;*/
+/*    border-style: solid;*/
+/*    !*display: inline-block;*!*/
+/*    */
+/*}*/
+
+
+.message-info {
+    color: blue;
+    background-color: lightblue;
+    margin: 1em 2em;
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.message-success {
+    color: darkgreen;
+    background-color: lightgreen;
+    margin: 1em 2em;
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    text-align: left;
+}
+
+.message-warning {
+    color: orange;
+    background-color: lightyellow;
+    margin: 1em 2em;
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.message-error {
+    color: darkred;
+    background-color: red;
+    margin: 1em 2em;
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    text-align: left;
+}
+
 
