@@ -30,20 +30,26 @@
 
 <body>
 
+
+<div id=weather></div>
+
 <script>
-
-    //    Do fetch stuff
-
     fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
         .then(response => response.json())
-        .then(data => console.log(data));
-
-    //    chaining methods due to promises
-
-    //append our api
-
-
+        // .then(data => console.log(data))
+        .then(data => {
+            // console.log(data.daily[i].temp.day);
+            console.log(data.daily);
+            let html = "";
+            html += '<ul>'
+            for (let i = 0; i < 5; i++) {
+                let dailyTemp = data.daily[i].temp.day
+                html += '<li>' + dailyTemp + '<li>'
+            }
+            $('#weather').html(html);
+        });
 </script>
+
 
 <header>
     <!--San-Serif means bootstrap is working-->
