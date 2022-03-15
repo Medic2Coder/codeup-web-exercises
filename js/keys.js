@@ -1,0 +1,3 @@
+const OWM_KEY="5806ee52a7a4cf570e899e23ab573625";
+
+
