@@ -59,7 +59,7 @@
             html += '<ul>'
             for (let i = 0; i < 5; i++) {
                 let dailyHeadlines = data.articles[i].title
-                html += '<li>' + dailyHeadlines + '<li>'
+                html += '<li>' + dailyHeadlines
             }
             $('#headlines').html(html);
         });
