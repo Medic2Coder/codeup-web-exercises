@@ -23,12 +23,27 @@
     <!--    TODO: CDN seems to work better than local jquery downloaded so keep this commented off-->
     <!--    <script src="js/jquery-3.6.0.min.js"></script>-->
     <!--jquery on external js sheet-->
-<!--    <script type="text/javascript" src="js/my-custom-javascript.js"></script>-->
-    "
+    <!--    <script type="text/javascript" src="js/my-custom-javascript.js"></script>-->
+    <script src="js/keys.js"></script>
 
 </head>
 
 <body>
+
+<script>
+
+    //    Do fetch stuff
+
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
+        .then(response => response.json())
+        .then(data => console.log(data));
+
+    //    chaining methods due to promises
+
+    //append our api
+
+
+</script>
 
 <header>
     <!--San-Serif means bootstrap is working-->
