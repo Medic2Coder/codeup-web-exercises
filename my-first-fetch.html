@@ -32,7 +32,9 @@
 
 
 <div id=weather></div>
-<div id="headlines"></div>
+<div id="us-headlines"></div>
+<div id="de-headlines"></div>
+<div id="co-headlines"></div>
 
 <script>
 // <!--    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)-->
@@ -50,6 +52,8 @@
 <!--            $('#weather').html(html);-->
 <!--        });-->
     //
+
+//Top Headlines in USA
     fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=" + NEWS_KEY)
         .then(response => response.json())
         // .then(data => console.log(data))
@@ -61,8 +65,41 @@
                 let dailyHeadlines = data.articles[i].title
                 html += '<li>' + dailyHeadlines
             }
-            $('#headlines').html(html);
+            $('#us-headlines').html(html);
         });
+
+//Top Headlines in Germany
+fetch("https://newsapi.org/v2/top-headlines?country=de&apiKey=" + NEWS_KEY)
+    .then(response => response.json())
+    // .then(data => console.log(data))
+    .then(data => {
+        console.log(data);
+        let html = "";
+        html += '<ul>'
+        for (let i = 0; i < 5; i++) {
+            let dailyHeadlines = data.articles[i].title
+            html += '<li>' + dailyHeadlines
+        }
+        $('#de-headlines').html(html);
+    });
+
+//Top Headlines in Colombia
+fetch("https://newsapi.org/v2/top-headlines?country=co&apiKey=" + NEWS_KEY)
+    .then(response => response.json())
+    // .then(data => console.log(data))
+    .then(data => {
+        console.log(data);
+        let html = "";
+        html += '<ul>'
+        for (let i = 0; i < 5; i++) {
+            let dailyHeadlines = data.articles[i].title
+            html += '<li>' + dailyHeadlines
+        }
+        $('#co-headlines').html(html);
+    });
+
+
+
 
 //article is an object... chose title property off of article object
 //array is bracket notation
