@@ -1,3 +1,3 @@
 const OWM_KEY="5806ee52a7a4cf570e899e23ab573625";
-
+const NEWS_KEY="3a20be5784d14e198ef9b1fcad147bf4";
 

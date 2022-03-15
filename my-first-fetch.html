@@ -32,87 +32,103 @@
 
 
 <div id=weather></div>
+<div id="headlines"></div>
 
 <script>
-    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
+    // fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
+    //     .then(response => response.json())
+    //     // .then(data => console.log(data))
+    //     .then(data => {
+    //         // console.log(data.daily[i].temp.day);
+    //         console.log(data.daily);
+    //         let html = "";
+    //         html += '<ul>'
+    //         for (let i = 0; i < 5; i++) {
+    //             let dailyTemp = data.daily[i].temp.day
+    //             html += '<li>' + dailyTemp + '<li>'
+    //         }
+    //         $('#weather').html(html);
+    //     });
+    //
+    fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=" + NEWS_KEY)
         .then(response => response.json())
         // .then(data => console.log(data))
         .then(data => {
-            // console.log(data.daily[i].temp.day);
-            console.log(data.daily);
+            console.log(data);
             let html = "";
             html += '<ul>'
             for (let i = 0; i < 5; i++) {
-                let dailyTemp = data.daily[i].temp.day
-                html += '<li>' + dailyTemp + '<li>'
+                let dailyHeadlines = data.articles[i]
+                html += '<li>' + dailyHeadlines + '<li>'
             }
-            $('#weather').html(html);
+            $('#headlines').html(html);
         });
+
 </script>
 
 
 <header>
     <!--San-Serif means bootstrap is working-->
     <h1>HEADER 1</h1>
-    <h1 id="codeup">Hello Codeup</h1>
+<!--    <h1 id="codeup">Hello Codeup</h1>-->
 
 </header>
 
 <h1>Example Page</h1>
-<div class="important">
-    <h3>NOTICE</h3>
-    <p>This is an important message!</p>
-</div>
-<div class="not-important">
-    <h2>Lorem Ipsum</h2>
-    <p>
-        Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut
-        aliquip ex ea commodo.
-    </p>
-</div>
-<p class="important">This is also very important.</p>
+<!--<div class="important">-->
+<!--    <h3>NOTICE</h3>-->
+<!--    <p>This is an important message!</p>-->
+<!--</div>-->
+<!--<div class="not-important">-->
+<!--    <h2>Lorem Ipsum</h2>-->
+<!--    <p>-->
+<!--        Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut-->
+<!--        aliquip ex ea commodo.-->
+<!--    </p>-->
+<!--</div>-->
+<!--<p class="important">This is also very important.</p>-->
 
 
 <!--NAVBAR SECTION BELOW-->
 <section>
     <!--NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown"
-                       aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--        <a class="navbar-brand" href="#">Navbar</a>-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
+<!--                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--            <ul class="navbar-nav mr-auto">-->
+<!--                <li class="nav-item active">-->
+<!--                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#">Link</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"-->
+<!--                       data-toggle="dropdown"-->
+<!--                       aria-expanded="false">-->
+<!--                        Dropdown-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                        <a class="dropdown-item" href="#">Action</a>-->
+<!--                        <a class="dropdown-item" href="#">Another action</a>-->
+<!--                        <div class="dropdown-divider"></div>-->
+<!--                        <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link disabled">Disabled</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <form class="form-inline my-2 my-lg-0">-->
+<!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </nav>-->
 
 </section>
 
