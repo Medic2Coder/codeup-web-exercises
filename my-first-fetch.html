@@ -35,6 +35,7 @@
 <div id="us-headlines"></div>
 <div id="de-headlines"></div>
 <div id="co-headlines"></div>
+<div id="spacex"></div>
 
 <script>
 // <!--    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)-->
@@ -97,6 +98,22 @@ fetch("https://newsapi.org/v2/top-headlines?country=co&apiKey=" + NEWS_KEY)
         }
         $('#co-headlines').html(html);
     });
+
+// GET https://api.spacexdata.com/v4/launches/latest
+
+    // fetch("https:api.spacexdata.com/v4/launches/latest")
+    //     .then(response => response.json())
+    //     // .then(data => console.log(data))
+    //     .then(data => {
+    //         console.log(data);
+    //         let html = "";
+    //         html += '<ul>'
+    //         for (let i = 0; i < 5; i++) {
+    //             let spacexInfo = data.crew[i].flightnumber
+    //             html += '<li>' + spacexInfo
+    //         }
+    //         $('#spacex').html(html);
+    //     });
 
 
 
