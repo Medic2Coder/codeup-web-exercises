@@ -20,7 +20,15 @@ let marker = getMarker(coolLocation)
 
 
     function setGeocoderEventListener() {
-        geocoder.on("results", function () {
+        geocoder.on("results", function (e) {
             console.log(this);
         });
     }
+
+    //hint (e)
+//e.result.geometry.coordinates
+//function (e)
+//then console.log(e.result.geometry.coordinates)
+
+//TODO: build the rest myself because I gotta learn by doing this
+clear
