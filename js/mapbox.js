@@ -21,6 +21,6 @@ let marker = getMarker(coolLocation)
 
     function setGeocoderEventListener() {
         geocoder.on("results", function () {
-            console.log("geocoder results event works.. woo");
+            console.log(this);
         });
     }
