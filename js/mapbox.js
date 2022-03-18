@@ -5,6 +5,7 @@ let geocoder;
 
 init();
 //command b takes you to where the function is defined
+setGeocoderEventListener();
 let coolLocation =   [-96.82015, 32.79701];
 let marker = getMarker(coolLocation)
 
@@ -15,4 +16,11 @@ let marker = getMarker(coolLocation)
         //correct syntax ^ backtick and backtick or backtick and regular apostrophe?
 
     })
+    }
+
+
+    function setGeocoderEventListener() {
+        geocoder.on("results", function () {
+            console.log("geocoder results event works.. woo");
+        });
     }
