@@ -31,4 +31,7 @@ let marker = getMarker(coolLocation)
 //then console.log(e.result.geometry.coordinates)
 
 //TODO: build the rest myself because I gotta learn by doing this
-clear
+
+//hint where attaching popup
+//hint use toggleclass with popup
+
