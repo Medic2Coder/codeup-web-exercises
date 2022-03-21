@@ -16,7 +16,7 @@
     //if konamiCode never changes, then is would be preferable to have it as const vs let
     //therefore const konamiCode = "3838404037393739666513";
 
-
+                //TODO: Retool this later:
 //     $(document).keyup(function(KeyboardEvent){
 //         const konamiCode = "3838404037393739666513";
 //         let codeEntered = "";
