@@ -31,12 +31,36 @@
     <button id="defuser">Defuse the BOM</button>
 
 <script>
-    (function() {
-        "use strict";
 
-        var detonationTimer = 5;
+//         //example code:
+//         // this code will produce a console log every second
+// // when count >= max, the interval is cancelled, and the logging will stop
+//
+//         var count = 0;
+//         var max = 10;
+//         var interval = 1000; // interval time in milliseconds
+//
+//         var intervalId = setInterval(function () {
+//             if (count >= max) {
+//                 clearInterval(intervalId);
+//                 console.log('All done');
+//             } else {
+//                 count++;
+//                 console.log('Repeating this line ' + count);
+//             }
+//         }, interval);
 
+
+       
         // TODO: This function needs to be called once every second
+        // Notes to self: setInterval(); clearInterval(); methods
+        //allow coed to be exectued at specific times
+        //therefore the code below is missing: setInterval, clearInterval;
+(function() {
+    "use strict";
+    var detonationTimer = 25;
+    detonationTimer = Number(detonationTimer);
+
         function updateTimer() {
             if (detonationTimer == 0) {
                 alert('EXTERMINATE!');
@@ -47,10 +71,12 @@
 
             detonationTimer--;
         }
-
         // TODO: When this function runs, it needs to
         // cancel the interval/timeout for updateTimer()
-        function defuseTheBOM() {
+    let timer = setInterval(updateTimer, 1000);
+
+    function defuseTheBOM() {
+        clearInterval(timer);
 
         }
 
