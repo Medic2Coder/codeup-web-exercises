@@ -47,7 +47,7 @@
             if ( e.keyCode == konami[state] ) state++;
             else state = 0;
             if ( state == 10 ) {
-                alert("You have added 30 lives!"), window.location = "http://example.com"; ;
+                alert("You have added 30 lives!"), window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
             }
 
         }, true);
