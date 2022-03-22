@@ -13,6 +13,12 @@ var marker = new mapboxgl.Marker()
     .setLngLat([-98.4916, 29.4260])
     .addTo(map);
 
+$.get("http://api.openweathermap.org/data/2.5/weather", {
+    APPID: OPEN_WEATHER_APPID,
+    q:     "San Antonio, US"
+});
+
+
 // mapboxgl.accessToken = YOUR_API_TOKEN_HERE;
 // var map = new mapboxgl.Map({
 //     container: 'map',

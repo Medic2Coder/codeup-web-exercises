@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Map</title>
+    <script src="js/keys.js"></script>
+
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet'/>
     <!-- Bootstrap CSS First -->
@@ -51,15 +53,25 @@
     <!--San-Serif means bootstrap is working-->
 
 </header>
+
+
+
+
 <div class="container display-flex main-container">
     <div>
-        <h1>My Mapbox Map!</h1>
+<!--        <h1>Weather and Headlines</h1>-->
+        <h1> Your Weather Map </h1>
+
+        <div id=weather></div>
+        <div id="us-headlines"></div>
+        <div id="de-headlines"></div>
+        <div id="co-headlines"></div>
+        <div id="spacex"></div>
 
         <!--<div id='map'></div>-->
         <div id='map' style='width: 55em; height: 35em; display:block; margin: 0 auto;'></div>
 
         <script>
-
 
             mapboxgl.accessToken = 'pk.eyJ1IjoibWFya2FuZGVyc29uMCIsImEiOiJjbDEwbGQ5OW0wdjcwM2pzMWNkcHVvYnM5In0.yCiJw13Nfp6AnBLYSjiuyw';
             const map = new mapboxgl.Map({
@@ -83,9 +95,45 @@
             //     .setLngLat([-98.489615, 29.426827])
             //     .setHTML("<p>Codeup Rocks!</p>")
             //     .addTo(map)
+
+            fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
+                .then(response => response.json())
+                // .then(data => console.log(data))-->
+                .then(data => {
+                    // console.log(data.daily[i].temp.day);-->
+                    console.log(data.daily);
+
+                    let
+                        html = "";
+                    html += '<ul>'
+                    for (let i = 0; i < 5; i++) {
+                        let
+                            dailyTemp = data.daily[i].temp.day
+                        html += '<li>' + dailyTemp + '<li>'
+                    }
+                    $('#weather').html(html);
+                });
+            
+            // // Top Headlines in USA
+            // fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=" + NEWS_KEY)
+            //     .then(response => response.json())
+            //     // .then(data => console.log(data))
+            //     .then(data => {
+            //         console.log(data);
+            //         let html = "";
+            //         html += '<ul>'
+            //         for (let i = 0; i < 5; i++) {
+            //             let dailyHeadlines = data.articles[i].title
+            //             html += '<li>' + dailyHeadlines
+            //         }
+            //         $('#us-headlines').html(html);
+            //     });
+
         </script>
     </div>
 </div>
+
+
 
 
 <!--NAVBAR SECTION BELOW-->
