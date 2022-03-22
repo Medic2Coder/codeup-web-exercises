@@ -27,6 +27,11 @@ pseudo-elements). One common use of this selector is to apply a custom
 /*    height: 700px;*/
 /*}*/
 
+.main-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Root
