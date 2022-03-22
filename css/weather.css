@@ -1,8 +1,8 @@
 /*Favorite color scheme, credit due to: Nick Milo CyberTron Theme  */
-* {
+/** {*/
 
-    outline: 1px dashed red;
-}
+/*    outline: 1px dashed red;*/
+/*}*/
 
 .jumbotron {
     background-image: url("../images/sunrise-amazing.png");
@@ -92,24 +92,33 @@ article {
 }
 
 .wrapper {
-    max-height: 400px;
+    max-height: 300px;
     border: 1px solid #2D3142;
     /*display: flex;*/
     overflow-x: auto;
 }
 
-.list-group-item {
+.list-item {
     margin: 0;
-    background-color: #ADACB5;
+    background-color: #ADACB9;
     color: white;
 }
 
-p.list-group-item {
+p.list-item {
     width: 100%;
     box-shadow: 3em 3em 3em 3em #2D3142;
 }
 
 @media screen and (min-width: 576px) {
+    .jumbotron {
+        background-image: url("../assets/images/mountain-sky.png");
+        background-size: cover;
+        padding: 30px;
+        /*background-image: linear-gradient(to right,  #5637DD, #3046C5, #60106B);*/
+        /*background-image: linear-gradient(270deg,  #5637DD, #3046C5, #60106B);*/
+        color: white;
+        margin: 0;
+    }
 
     body {
         overflow: hidden;
@@ -142,7 +151,7 @@ p.list-group-item {
     #map {
         margin: auto;
         width: 99%;
-        height: 55vh;
+        height: 60vh;
     }
 
 

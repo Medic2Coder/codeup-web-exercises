@@ -87,11 +87,11 @@ $(document).ready(function() {
             let formatted_date = current_datetime.getDate() + "-" + months[current_datetime.getMonth()]  + "-" + current_datetime.getFullYear();
 //*
             html += ('<article>' +
-                '<p class="list-group-item">' + formatted_date + '</p>' +
-                '<p class="list-group-item">' + '<img src="http://openweathermap.org/img/wn/' + day.weather[0].icon + '@2x.png"/>' + '</p>' +
-                '<p class="list-group-item">' + day.temp.min + '°F' + ' / ' + day.temp.max + '°F' + '</p>' +
-                '<p class="list-group-item">' + 'Description: ' + day.weather[0].description + '</p>' +
-                '<p class="list-group-item">' + 'Humidity: ' + day.humidity + '</p>' +
+                '<p class="list-item">' + formatted_date + '</p>' +
+                '<p class="list-item">' + '<img src="http://openweathermap.org/img/wn/' + day.weather[0].icon + '@2x.png"/>' + '</p>' +
+                '<p class="list-item">' + day.temp.min + '°F' + ' / ' + day.temp.max + '°F' + '</p>' +
+                '<p class="list-item">' + 'Description: ' + day.weather[0].description + '</p>' +
+                '<p class="list-item">' + 'Humidity: ' + day.humidity + '</p>' +
 
                 '</article>');
         });
@@ -105,12 +105,12 @@ $(document).ready(function() {
             let formatted_date = current_datetime.getDate() + "-" + months[current_datetime.getMonth()]  + "-" + current_datetime.getFullYear();
 //*
             html += ('<article>' +
-                '<p class="list-group-item">' + formatted_date + '</p>' +
-                '<p class="list-group-item">' + '<img src="http://openweathermap.org/img/wn/' + day.weather[0].icon + '@2x.png"/>' + '</p>' +
-                '<p class="list-group-item">' + day.temp.min + '°F' + ' / ' + day.temp.max + '°F' + '</p>' +
+                '<p class="list-item">' + formatted_date + '</p>' +
+                '<p class="list--item">' + '<img src="http://openweathermap.org/img/wn/' + day.weather[0].icon + '@2x.png"/>' + '</p>' +
+                '<p class="list-item">' + day.temp.min + '°F' + ' / ' + day.temp.max + '°F' + '</p>' +
                 // '<p class="list-group-item">' + day.temp.min + '°C' + ' / ' + day.temp.max + '°F' + '</p>' +
-                '<p class="list-group-item">' + 'Description: ' + day.weather2[0].description + '</p>' +
-                '<p class="list-group-item">' + 'Humidity: ' + day.humidity + '</p>' +
+                '<p class="list-item">' + 'Description: ' + day.weather2[0].description + '</p>' +
+                '<p class="list-item">' + 'Humidity: ' + day.humidity + '</p>' +
 
                 '</article>');
         });
