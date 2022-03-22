@@ -11,13 +11,7 @@
         </div>
     </div>
 
-    <div class="container">
-        <div>
-                               <span id="newsTicker"><rssapp-ticker id="tyiaHcAizFsBzNGf"></rssapp-ticker><script
-                                       src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
-</span>
-        </div>
-    </div>
+
     <!--Scripts-->
     <!--    jquery cdn script first-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -47,10 +41,20 @@
 
 </head>
 <body>
+<!--ticker for positive news-->
+<!--<div>-->
+<!--    <rssapp-ticker id="TWXtuDEbe96n7o4r"></rssapp-ticker><script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>-->
+<!--</div>-->
+            <div>
+                <rssapp-carousel id="TWXtuDEbe96n7o4r"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
+            </div>
+
 
 <nav class="sunglasses">
     <p class="navbar-forecast"> Your Searched Location: <span id="word"></span></p>
 </nav>
+
+
 
 <main>
 
@@ -66,6 +70,7 @@
 
 
     <div id="geocoder" class="geocoder"></div>
+
 
     <div id='map'></div>
 
