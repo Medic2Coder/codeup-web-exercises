@@ -2,7 +2,6 @@ $(document).ready(function() {
     //added just in case ^
 
 
-
 //default public token
     mapboxgl.accessToken = 'pk.eyJ1IjoibWFya2FuZGVyc29uMCIsImEiOiJjbDEwbGQ5OW0wdjcwM2pzMWNkcHVvYnM5In0.yCiJw13Nfp6AnBLYSjiuyw';
 
@@ -122,6 +121,6 @@ $(document).ready(function() {
 
 
 
-    weather(29.4252, -98.4916);
+    weather(29.4251, -98.4916);
 
 });
