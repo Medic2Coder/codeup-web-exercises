@@ -96,11 +96,11 @@
             //     .setHTML("<p>Codeup Rocks!</p>")
             //     .addTo(map)
 
-            fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
+            fetch("http://api.openweathermap.org/data/2.5/weather?q=San Antonio&mode=json&units=imperial" + OWM_KEY)
                 .then(response => response.json())
-                // .then(data => console.log(data))-->
+                // .then(data => console.log(data))
                 .then(data => {
-                    // console.log(data.daily[i].temp.day);-->
+                    // console.log(data.daily[i].temp.day);
                     console.log(data.daily);
 
                     let
@@ -113,6 +113,24 @@
                     }
                     $('#weather').html(html);
                 });
+
+            // fetch("https://api.openweathermap.org/data/2.5/forecast?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
+            //     .then(response => response.json())
+            //     // .then(data => console.log(data))
+            //     .then(data => {
+            //         // console.log(data.daily[i].temp.day);
+            //         console.log(data.daily);
+            //
+            //         let
+            //             html = "";
+            //         html += '<ul>'
+            //         for (let i = 0; i < 5; i++) {
+            //             let
+            //                 dailyTemp = data.daily[i].temp.day
+            //             html += '<li>' + dailyTemp + '<li>'
+            //         }
+            //         $('#weather').html(html);
+            //     });
             
             // // Top Headlines in USA
             // fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=" + NEWS_KEY)
