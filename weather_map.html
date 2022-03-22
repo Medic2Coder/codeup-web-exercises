@@ -10,6 +10,7 @@
     <title>Weather Map</title>
     <script src="js/keys.js"></script>
 
+
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet'/>
     <!-- Bootstrap CSS First -->
@@ -30,6 +31,8 @@
             integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--    jQuery compressed from local file  Scripts-->
+<!--    GEOCODER SCRIPT -->
+    <script src="js/geocoder-utils.js"></script>
 
 
     <!--    TODO: CDN seems to work better than local jquery downloaded so keep this commented off-->
@@ -45,6 +48,7 @@
     <!--    <script src="js/weather.js"></script>-->
 
 
+
 </head>
 
 <body>
@@ -53,6 +57,11 @@
     <!--San-Serif means bootstrap is working-->
 
 </header>
+
+<!-- As a heading -->
+<nav class="navbar navbar-light bg-dark">
+    <span class="navbar-brand mb-0 h1 mx-auto" id = "current-location">You are Here</span>
+</nav>
 
 
 <div class="container display-flex main-container">
@@ -128,46 +137,46 @@
 
         <script>
 
-            mapboxgl.accessToken = 'pk.eyJ1IjoibWFya2FuZGVyc29uMCIsImEiOiJjbDEwbGQ5OW0wdjcwM2pzMWNkcHVvYnM5In0.yCiJw13Nfp6AnBLYSjiuyw';
-            const map = new mapboxgl.Map({
-                container: 'map', // container ID
-                style: 'mapbox://styles/markanderson0/cl11qnq87000c14s2oru88bx8', // style URL
-                center: [-98.4916, 29.4252], // starting position [lng, lat]
-                zoom: 11 // starting zoom
-            });
-            //alamo marker
-            var marker = new mapboxgl.Marker()
-                .setLngLat([-98.4916, 29.4260])
-                .addTo(map);
-
-            //popup over alamo
-            var alamoPopup = new mapboxgl.Popup()
-                .setHTML("<p>Remember The Alamo!</p>")
-
-            marker.setPopup(alamoPopup)
-            //popup over codeup
-            // var popup = new mapboxgl.Popup()
-            //     .setLngLat([-98.489615, 29.426827])
-            //     .setHTML("<p>Codeup Rocks!</p>")
-            //     .addTo(map)
-
-            fetch("http://api.openweathermap.org/data/2.5/weather?q=San Antonio&mode=json&units=imperial" + OWM_KEY)
-                .then(response => response.json())
-                // .then(data => console.log(data))
-                .then(data => {
-                    // console.log(data.daily[i].temp.day);
-                    console.log(data.daily);
-
-                    let
-                        html = "";
-                    html += '<ul>'
-                    for (let i = 0; i < 5; i++) {
-                        let
-                            dailyTemp = data.daily[i].temp.day
-                        html += '<li>' + dailyTemp + '<li>'
-                    }
-                    $('#weather').html(html);
-                });
+//            mapboxgl.accessToken = 'pk.eyJ1IjoibWFya2FuZGVyc29uMCIsImEiOiJjbDEwbGQ5OW0wdjcwM2pzMWNkcHVvYnM5In0.yCiJw13Nfp6AnBLYSjiuyw';
+//            const map = new mapboxgl.Map({
+//                container: 'map', // container ID
+//                style: 'mapbox://styles/markanderson0/cl11qnq87000c14s2oru88bx8', // style URL
+//                center: [-98.4916, 29.4252], // starting position [lng, lat]
+//                zoom: 11 // starting zoom
+//            });
+//            //alamo marker
+//            var marker = new mapboxgl.Marker()
+//                .setLngLat([-98.4916, 29.4260])
+//                .addTo(map);
+//
+//            //popup over alamo
+//            var alamoPopup = new mapboxgl.Popup()
+//                .setHTML("<p>Remember The Alamo!</p>")
+//
+//            marker.setPopup(alamoPopup)
+//            //popup over codeup
+//            // var popup = new mapboxgl.Popup()
+//            //     .setLngLat([-98.489615, 29.426827])
+//            //     .setHTML("<p>Codeup Rocks!</p>")
+//            //     .addTo(map)
+//
+//            fetch("http://api.openweathermap.org/data/2.5/weather?q=San Antonio&mode=json&units=imperial" + OWM_KEY)
+//                .then(response => response.json())
+//                // .then(data => console.log(data))
+//                .then(data => {
+//                    // console.log(data.daily[i].temp.day);
+//                    console.log(data.daily);
+//
+//                    let
+//                        html = "";
+//                    html += '<ul>'
+//                    for (let i = 0; i < 5; i++) {
+//                        let
+//                            dailyTemp = data.daily[i].temp.day
+//                        html += '<li>' + dailyTemp + '<li>'
+//                    }
+//                    $('#weather').html(html);
+//                });
 
             // fetch("https://api.openweathermap.org/data/2.5/forecast?lat=33.44&lon=-94.04&appid=" + OWM_KEY)
             //     .then(response => response.json())
@@ -264,6 +273,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
 
+<script src="js/weather.js"></script>
 
 </body>
 </html>
