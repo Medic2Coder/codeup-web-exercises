@@ -56,15 +56,33 @@
         <h1>My Mapbox Map!</h1>
 
         <!--<div id='map'></div>-->
-        <div id='map' style='width: 500px; height: 300px; display:block; margin: 0 auto;'></div>
+        <div id='map' style='width: 55em; height: 35em; display:block; margin: 0 auto;'></div>
+
         <script>
+
+
             mapboxgl.accessToken = 'pk.eyJ1IjoibWFya2FuZGVyc29uMCIsImEiOiJjbDEwbGQ5OW0wdjcwM2pzMWNkcHVvYnM5In0.yCiJw13Nfp6AnBLYSjiuyw';
             const map = new mapboxgl.Map({
                 container: 'map', // container ID
                 style: 'mapbox://styles/markanderson0/cl11qnq87000c14s2oru88bx8', // style URL
                 center: [-98.4916, 29.4252], // starting position [lng, lat]
-                zoom: 8 // starting zoom
+                zoom: 11 // starting zoom
             });
+            //alamo marker
+            var marker = new mapboxgl.Marker()
+                .setLngLat([-98.4916, 29.4260])
+                .addTo(map);
+
+            //popup over alamo
+            var alamoPopup = new mapboxgl.Popup()
+                .setHTML("<p>Remember The Alamo!</p>")
+
+            marker.setPopup(alamoPopup)
+            //popup over codeup
+            // var popup = new mapboxgl.Popup()
+            //     .setLngLat([-98.489615, 29.426827])
+            //     .setHTML("<p>Codeup Rocks!</p>")
+            //     .addTo(map)
         </script>
     </div>
 </div>

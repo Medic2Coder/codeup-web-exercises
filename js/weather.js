@@ -9,6 +9,10 @@
 //     zoom: 8 // starting zoom
 // });
 
+var marker = new mapboxgl.Marker()
+    .setLngLat([-98.4916, 29.4260])
+    .addTo(map);
+
 // mapboxgl.accessToken = YOUR_API_TOKEN_HERE;
 // var map = new mapboxgl.Map({
 //     container: 'map',
