@@ -107,3 +107,38 @@ fetch("http://api.openweathermap.org/data/2.5/weather?q=San Antonio&mode=json&un
         }
         $('#weather').html(html);
     });
+
+function createWeather() {
+    var html = "";
+
+    data.daily.forEach(function (day, index) {
+        let actual_datetime = new Date(day.dt*1000);
+        let modified_datetime = actual_datetime.getDate() + "-" + months[actual_datetime.getMonth()] + "-" + actual_datetime.getFullYear();
+
+        html += ('<section>' +
+            '<p class="list'> + modified_datetime + '</p>' +
+            '<p class="list">' + 'Humidity: ' + day.humidity + '</p>' +
+            '<p class="list">' + 'Description: ' + day.weather[0].description + '</p>' +
+            '<p class="list">' + day.temp.min + '°F' + ' / ' + day.temp.max + '°F' + '</p>'  +
+            '</section>');
+    });
+    $("#card-text").html(html);
+
+}
+
+function climate (lat, lon) {
+    $.get('https://api.openweathermap.org/data/2.5/onecall', {
+        appid:  OWM_KEY,
+        lat: lat,
+        lon: lon,
+        units: "imperial",
+        exclude: "minute, hourly"
+
+    }).done(function (error) {
+        createWeather(data);
+
+    }).fail(function (error) {
+        console.log(error);
+    });
+
+    }

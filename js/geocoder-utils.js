@@ -51,3 +51,21 @@ function reverseGeocode(coordinates, token) {
             return data.features[0].place_name;
         });
 }
+
+function createWeather() {
+    var html = "";
+
+    data.daily.forEach(function (day, index) {
+        let actual_datetime = new Date(day.dt*1000);
+        let modified_datetime = actual_datetime.getDate() + "-" + months[actual_datetime.getMonth()] + "-" + actual_datetime.getFullYear();
+
+                      html += ('<section>' +
+                          '<p class="list'> + modified_datetime + '</p>' +
+                          '<p class="list">' + 'Humidity: ' + day.humidity + '</p>' +
+                          '<p class="list">' + 'Description: ' + day.weather[0].description + '</p>' +
+                          '<p class="list">' + day.temp.min + '°F' + ' / ' + day.temp.max + '°F' + '</p>'  +
+                          '</section>');
+    });
+    $("#card-text").html(html);
+
+}
