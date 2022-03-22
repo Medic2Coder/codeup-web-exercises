@@ -33,6 +33,12 @@ pseudo-elements). One common use of this selector is to apply a custom
     text-align: center;
 }
 
+.card-container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Root
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
