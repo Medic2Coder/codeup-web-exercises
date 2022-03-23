@@ -63,3 +63,7 @@ lexicalThings();
 
 //import hopeThisIsVisible from "./es6-lec-notes.js", make sure to type it out to get the js
 //can be used to cross reference JS files
+
+//TODO: use map filter reduce to refactor map project after ...
+//TODO: es6 exercise
+
