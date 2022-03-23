@@ -84,6 +84,8 @@ console.log(longestEmail);
             return resultString +=user.name;
 
 }
+//TODO ^ clean this up
+
 
 
 
