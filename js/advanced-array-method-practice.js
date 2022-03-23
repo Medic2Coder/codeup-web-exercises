@@ -13,3 +13,11 @@ console.log(arr1.sort());
 //higher order functions: a function that takes another function as an argument, or returns a function as a return value
 
 //callback functions: a function that's passed into a higher order function as an argument, then used inside it (called back)
+//callback function is the flip side of higher order function
+
+/*ARRAY METHODS:
+MAP, FILTER, REDUCE
+... are higher order functions, each take a callback function as an argument
+and this callback function is defined by the programmer and is usually in the form of an
+arrow function
+ */
