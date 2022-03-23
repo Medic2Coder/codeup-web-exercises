@@ -39,3 +39,58 @@ const users = [
         yearsOfExperience: 9
     }
 ];
+//guided by walkthrough
+let usersWithThreeOrMoreLanguages = users.filter(function (user){
+    //return boolean value to check condition of each user
+    return.user.languages.length >=3; //or greater than two
+});
+//comment out below then run
+let usersWithThreeOrMoreLanguages = forEach(function (user){
+    console.log(user.languages);
+});
+
+let emailAddresses = users.map(function (user ) {
+   // TODO: check return.user.email  and  know that arrow is a call back function
+   // return.user.email;
+   // or with arrow function
+    users.map(e=>e.email);
+
+});
+     //write last function here
+
+emailAddresses.forEach(function (email){
+    console.log(email);
+});
+
+let totalYears = users.reduce((totalYears, user ) => {
+    return totalYears + user.yearsOfExperience;
+
+}, 0);
+                                                   //TODO: How to get the :string and :{...}) notation?
+let longestEmail = users.reduce(longest   , user   , ) => {
+           if (user.email.length.longest.length) {
+               longest = user.email;
+
+           }
+             return longest;
+}, ''
+
+console.log(longestEmail);
+
+//TODO ^ Weird, is there a better way to do this above ^
+
+
+        let instructorString = users.reduce ((resultString, user ){
+            return resultString +=user.name;
+
+}
+
+
+
+
+
+
+
+
+
+
