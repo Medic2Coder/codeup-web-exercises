@@ -22,7 +22,7 @@ and this callback function is defined by the programmer and is usually in the fo
 arrow function
 NEED TO KNOW:
 None of these methods (map, filter, reduce) are mutator methods, they do not change the original array
-   can be classified as iteration methods - they iterate through the array as many times as the array length
+   but...they can be classified as iteration methods - they iterate through the array as many times as the array length
 
    Last to know: All have return values, not all array methods do, but map, filter return a new array
    reduce will return a single a value
