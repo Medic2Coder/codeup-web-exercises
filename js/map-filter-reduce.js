@@ -92,17 +92,15 @@ console.log(instructorString);
 //Bonus
 
 let languages = users.reduce((listOfLanguages, user)=>{
-
     // if (!ListofLanguages.includes(user)) //so we may need to loop through each
     users.langauges.forEach(function(lang ){
         if (!listOfLanguages.includes(lang)) {
             listOfLanguages.push(lang);
-
         }
         // return ListOfLanguages  //dont return in the loop!
     })
     return listOfLanguages; //implicitly looping through each user and looping through their languages, no?
-
+//          so if langauge isnt in final array, will push in
 }, [])
 
 
