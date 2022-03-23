@@ -32,13 +32,29 @@ const super_secret_key = "password123";  // you can't change the value bc string
 //
 
 //anonymous function is when you don't write specifically function instead just put let
-let sample = "hi there"; // if you define a variable inside a function probably wont be able to see it outside the function
-
-let scopeyBoi = function () {
-         console.log(sample);
-    }
-     scopeyBoi();
-    //but can see the variable inside the function if its placed outside on top
+// let sample = "hi there"; // if you define a variable inside a function probably wont be able to see it outside the function
+//
+// let scopeyBoi = function () {
+//          console.log(sample);
+//     }
+//      scopeyBoi();
+//     //but can see the variable inside the function if its placed outside on top
 
 
 //TODO: further read on lexical scoping
+
+// function notLexicalThings(){                           //highest scoping is global scoping
+//               console.log(this.global.parseInt('12')); //'this' is currently NOT lexical
+//
+// }
+//            notLexicalThings();
+
+let lexicalThings = () => {
+    // console.log(this.global.parseInt('12'));
+    this['new prop'] = "string boi";
+    console.log(this);
+    // return this;
+
+}
+lexicalThings();
+// console.log(lexicicalThings());
