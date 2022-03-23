@@ -1,14 +1,14 @@
-const arr1 = [3,4,2,1];
-    //arrays come with predfined methods that work on any array
-console.log(arr1.sort());
-   //worked
-      //sort is an array method so it has to be attached to an array to work
-//method is a function that is never called by istself
+const arr99 = [3, 4, 2, 1];
+//arrays come with predfined methods that work on any array
+console.log(arr99.sort());
+//worked
+//sort is an array method so it has to be attached to an array to work
+//method is a function that is never called by itself
 //method is always called using dot notation using some kind of data such as an array
-//must incluse paramter list with parenthesis, even if it's empty as in sort
+//must include parameter list with parenthesis, even if it's empty as in sort
 
 //it is possible to pass a function into another function's argument list as an argument
- //concepts: higher order functions and callback functions
+//concepts: higher order functions and callback functions
 
 //higher order functions: a function that takes another function as an argument, or returns a function as a return value
 
@@ -27,5 +27,29 @@ None of these methods (map, filter, reduce) are mutator methods, they do not cha
    Last to know: All have return values, not all array methods do, but map, filter return a new array
    reduce will return a single a value
  */
+
+//Given arr1, iterate through array and double each number:
+const arr1 = [5, 21, 8, 100];
+
+//without using map
+const arr2 = [];
+for (let i = 0; i < arr1.length; i++) {
+    arr2[i] = arr1[i] * 2;
+}
+console.log(arr2);
+
+//another way without using map
+const arr3 = [];
+arr1.forEach((n, i) => {
+    arr3[i] = n * 2;
+});
+console.log(arr3);
+
+// Now using MAP:
+const arr4 = arr1.map(n => n * 2);
+console.log(arr4);
+
+
+
 
 
