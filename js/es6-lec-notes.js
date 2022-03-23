@@ -58,3 +58,5 @@ let lexicalThings = () => {
 }
 lexicalThings();
 // console.log(lexicicalThings());
+
+//"use strict"; TODO: review "use strict" use cases
