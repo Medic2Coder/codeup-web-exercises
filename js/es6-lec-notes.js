@@ -60,3 +60,6 @@ lexicalThings();
 // console.log(lexicicalThings());
 
 //"use strict"; TODO: review "use strict" use cases
+
+//import hopeThisIsVisible from "./es6-lec-notes.js", make sure to type it out to get the js
+//can be used to cross reference JS files
