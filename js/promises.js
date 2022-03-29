@@ -15,7 +15,7 @@
 
 //TODO: Find out how to format this url down below:
 
-fetch(https://github.com/Medic2Coder, {headers: {'Authorization':gitHubToken}})
+fetch('https://api.github.com/users/Medic2Coder', {headers: {'Authorization':gitHubToken}})
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
