@@ -13,17 +13,31 @@
 //get commits with mimicing the green squares for bonus effect
 
 
-//TODO: Find out how to format this url down below:
-
 fetch('https://api.github.com/users/Medic2Coder', {headers: {'Authorization':gitHubToken}})
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
 
-//walkthorugh:
+//walkthrough:
 const baseURL = 'https://api.github.com/users/Medic2Coder';
-
-fetch(baseURL + "/")
+                         // function getCommits(baseURL) {
+                         //     return fetch(url, {headers: {'Authorization':gitHubToken}})
+                         //         .then(response => response.json())
+                         //         .then(data => console.log(data))
+                         //         .catch(error => console.log(error));
+                         // }
+function getLastPush(username) {
+    const url = `${baseURL}/events/public`;
+    return fetch(url, {headers: {'Authorization':gitHubToken}})
+        .then(response => response.json())
+        .then(data => console.log(data)) //do something with data, loop through, find first push event and return it //do some logic here and return it
+        .catch(error => console.log(error));   //and remove these console.logs
+}
+// fetch(baseURL + "/")
+getLastPush('Medic2Coder').then(event => {
+    // $("body").html(event.created_at + " " + event.type + "</li>");
+    console.log(event);
+});
 
 //TODO: review that option command t is your friend
 
