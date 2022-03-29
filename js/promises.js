@@ -10,6 +10,7 @@
 // Create a function that accepts a GitHub username, and returns a promise that resolves returning just the date of the last commit that user made. Reference the github api documentation to achieve this.
 //
 //TODO: This ^
+//get commits with mimicing the green squares for bonus effect
 
 
 
