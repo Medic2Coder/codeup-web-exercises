@@ -57,7 +57,7 @@ getLastPush('Medic2Coder').then(event => {
 
 // TODO: THIS below:
 //     Create Your Own Promise
-// Write a function named wait that accepts a number as a parameter, and returns a promise that resolves after the passed number of milliseconds.
+  // Write a function named wait that accepts a number as a parameter, and returns a promise that resolves after the passed number of milliseconds.
 //
 //
 // wait(1000).then(() => console.log('You\'ll see this after 1 second'));
