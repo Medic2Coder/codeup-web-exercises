@@ -20,6 +20,13 @@ fetch('https://api.github.com/users/Medic2Coder', {headers: {'Authorization':git
     .then(data => console.log(data))
     .catch(error => console.log(error));
 
+//walkthorugh:
+const baseURL = 'https://api.github.com/users/Medic2Coder';
+
+fetch(baseURL + "/")
+
+//TODO: review that option command t is your friend
+
 
 
 
